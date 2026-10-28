@@ -1,0 +1,56 @@
+{
+	"name": "n8n-nodes-skipcalls",
+	"version": "0.1.0",
+	"description": "n8n nodes for SkipCalls, the AI phone receptionist: trigger workflows on calls, texts and bookings, schedule AI outbound calls, and reply to SMS.",
+	"license": "MIT",
+	"homepage": "https://skipcalls.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"skipcalls",
+		"ai receptionist",
+		"phone",
+		"sms",
+		"voice ai"
+	],
+	"author": {
+		"name": "SkipCalls",
+		"email": "team@skipcalls.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cail-io/n8n-nodes-skipcalls.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/SkipCallsApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/SkipCalls/SkipCalls.node.js",
+			"dist/nodes/SkipCallsTrigger/SkipCallsTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.53.3",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^21.1.0",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
