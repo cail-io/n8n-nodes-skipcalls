@@ -16,9 +16,14 @@ const EVENTS = [
 		description: 'The AI booked an appointment on a call',
 	},
 	{
-		name: 'Follow-up Task Created',
-		value: 'TASK_CREATED',
-		description: 'SkipCalls created a follow-up task after a call',
+		name: 'Estimate Ready',
+		value: 'ESTIMATE_READY',
+		description: 'SkipCalls calculated an estimate for a job, with total, line items and the drafted reply',
+	},
+	{
+		name: 'Estimate Sent',
+		value: 'ESTIMATE_SENT',
+		description: 'An estimate went out to the customer by text or email, with the message as sent',
 	},
 	{
 		name: 'Incoming Call Completed',
@@ -29,6 +34,16 @@ const EVENTS = [
 		name: 'Incoming Call Failed',
 		value: 'INCOMING_CALL_FAILED',
 		description: 'An incoming call dropped before the agent could handle it',
+	},
+	{
+		name: 'Job Created',
+		value: 'JOB_CREATED',
+		description: 'A call created a job in Needs you: a callback, a question, or a message to send',
+	},
+	{
+		name: 'Job Status Changed',
+		value: 'JOB_STATUS_CHANGED',
+		description: 'A job was done, not needed, waiting on the customer, snoozed, back in Needs you, or expired',
 	},
 	{
 		name: 'Outbound Call Completed',
