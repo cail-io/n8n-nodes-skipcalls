@@ -26,7 +26,8 @@ Self-hosted n8n: **Settings → Community nodes → Install**, enter `n8n-nodes-
 | SMS Sent | A text was sent from one of your numbers |
 | SMS Failed | An outgoing text failed to deliver |
 | Appointment Booked | The AI booked an appointment on a call |
-| Follow-up Task Created | SkipCalls created a follow-up task after a call |
+| Job Created | A call created a job in Needs you (callback, question or message to send) |
+| Estimate Ready | SkipCalls calculated an estimate for a job: total, line items, drafted reply |
 
 Pick an agent to listen to one receptionist only, or leave it empty for all. n8n registers the webhook when you activate the workflow and removes it when you deactivate it. Active triggers also appear in SkipCalls under **Integrations → n8n**, where you can pause them or change the agent.
 
