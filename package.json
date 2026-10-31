@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-skipcalls",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "n8n nodes for SkipCalls, the AI phone receptionist: trigger workflows on calls, texts and bookings, schedule AI outbound calls, and reply to SMS.",
 	"license": "MIT",
 	"homepage": "https://skipcalls.com",
