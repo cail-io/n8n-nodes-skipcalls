@@ -21,6 +21,11 @@ const EVENTS = [
 		description: 'SkipCalls calculated an estimate for a job, with total, line items and the drafted reply',
 	},
 	{
+		name: 'Estimate Sent',
+		value: 'ESTIMATE_SENT',
+		description: 'An estimate went out to the customer by text or email, with the message as sent',
+	},
+	{
 		name: 'Incoming Call Completed',
 		value: 'INCOMING_CALL_COMPLETED',
 		description: 'Your AI receptionist finished a call, with summary and collected data',
@@ -34,6 +39,11 @@ const EVENTS = [
 		name: 'Job Created',
 		value: 'JOB_CREATED',
 		description: 'A call created a job in Needs you: a callback, a question, or a message to send',
+	},
+	{
+		name: 'Job Status Changed',
+		value: 'JOB_STATUS_CHANGED',
+		description: 'A job was done, not needed, waiting on the customer, snoozed, back in Needs you, or expired',
 	},
 	{
 		name: 'Outbound Call Completed',

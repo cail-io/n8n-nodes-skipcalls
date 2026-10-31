@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- SkipCalls Trigger: new Job Created and Estimate Ready events. Follow-up Task Created is removed: SkipCalls no longer creates follow-up tasks (jobs in Needs you replaced them), so it never fired.
+- SkipCalls Trigger: new Job Created, Job Status Changed, Estimate Ready and Estimate Sent events. Follow-up Task Created is removed: SkipCalls no longer creates follow-up tasks (jobs in Needs you replaced them), so it never fired.
 
 ## 0.1.0
 
